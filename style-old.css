@@ -1,0 +1,256 @@
+/*
+Theme Name: Sela
+Theme URI: https://wordpress.com/themes/sela/
+Description: Sela is not your typical business theme. Vibrant, bold, and clean, with lots of space for large images, this theme will look great on all devices, from desktop to mobile.
+Version: 1.0.17
+Author: Automattic
+Author URI: https://wordpress.com/themes/
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: sela
+Tags: blog, custom-background, custom-colors, custom-menu, featured-images, full-width-template, microformats, right-sidebar, rtl-language-support, sticky-post, translation-ready, two-columns
+*/
+
+/*--------------------------------------------------------------
+1.0 Reset
+--------------------------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	font-family: inherit;
+	font-size: 100%;
+	font-weight: inherit;
+	font-style: inherit;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+	border: 0;
+	outline: 0;
+}
+html {
+	font-size: 62.5%; /* 10px */
+	overflow-y: scroll; /* Keeps page centred in all browsers regardless of content height */
+	-webkit-text-size-adjust: 100%; /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
+		-ms-text-size-adjust: 100%; /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+}
+body {
+	background: #f0f0f0;
+}
+/*****************************/
+#navbar{ border-bottom: 3px solid #e70012; }
+#navbar a, #navbar p{ font-size: 15px; }
+
+#hot{
+	height: 280px;
+}
+
+.hot-head{
+	height: 16px;
+	padding: 2px 0;
+}
+.hot-title{ font-size: 12px; line-height: 16px; }
+.hot-body p{
+	font-size: 12px;
+}
+#hot-articles p{ font-size: 14px; }
+
+footer{
+	border-width: 2px;
+}
+footer p, footer a{
+	font-size: 14px;
+}
+
+#products_carousel .carousel-item span{
+	font-size: 13px;
+}
+#p-introduce .page_head{
+	font-size: 24px
+}
+#p-introduce .page_body p{
+	font-size: 20px
+	line-height: 2px;
+}
+
+/*category page style*/
+.cate-body .cate-item{
+	height: 200px;
+	padding: 5px;
+	background-color: #fff;
+
+	box-shadow: 1px 1px 4px #ddd;
+}
+
+.cate-body .cate-item .cate-text{
+	text-align: left;
+}
+.cate-body .cate-item .cate-text h5{
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 40px;
+}
+.cate-body .cate-item .cate-text p{
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.cate-body .cate-page-list{
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+	padding: 5px;
+
+	background-color: #333;
+}
+.cate-body .cate-page-list span, .cate-body .cate-page-list a{
+	font-size: 14px;
+}
+.cate-body .cate-page-list span{
+	color: #fff;
+}
+.cate-body .cate-item .cate-thumbnail img{
+	width: 190px;
+	height: 190px;
+}
+
+
+/* agent part style */
+.agent-body{
+	background-color: #fff;
+}
+
+.agent-title{
+	padding: 10px 0;
+	text-align: center;
+	background-color: #ffeed5;
+	border: 2px solid #ffe0b4;
+}
+.agent-title h1{
+	font-size: 14px;
+	letter-spacing: 2px;
+}
+
+/* contact us */
+.contact-title h1{
+	font-size: 16px;
+}
+.contact-info .card-body h5{
+	font-size: 16px;
+	font-weight: bold;
+} 
+.contact-info .card-body p{
+	font-size: 13px;
+	line-height: 200%;
+}
+.contact-info .card-body span{
+	font-weight: 700;
+}
+
+/* widget style */
+.widget{
+	margin-top: 10px;
+}
+.widget-title{
+	text-align: left;
+	padding-left: 10px;
+	line-height: 30px;
+	font-size: 16px;
+	background-color: #ddd;
+}
+.widget ul{
+	padding-left: 10px;
+
+}
+.widget ul li{ line-height: 28px;list-style: square; padding-left: 5px; }
+.widget ul li a{
+	font-size: 14px;
+	line-height: 18px;
+}
+.widget_media_image img{ width: 100%; }
+
+/* footer style */
+footer{
+	border-top:5px solid #28a17e;
+	background-color: #333;
+	height: 200px;
+}
+footer p{
+	line-height: 200%;
+}
+footer .footer-erweima div{
+	width: 140px;
+	height: 140px;
+	text-align: center;
+}
+
+/* common style */
+.card-link{
+	font-size: 14px;
+}
+
+/* common style */
+.sect-head{
+	padding: 4px 0;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-bottom: 2px solid #28a17e;
+}
+.sect-head h5{
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 700;
+}
+.sect-head span{
+	font-size: 14px;
+}
+.sect-head img{
+	width: auto;
+}
+span.highlight{ font-size: 14px; font-weight: 700; }
+span.highcolor{ color:#e60012; }
+.font-b{ font-weight: 700; }
+
+/* introduce page */
+#intro-head .sect-head h1{
+	font-size: 48px;
+	font-family: Tahoma;
+}
+#intro-head .sect-head{ text-align: center; }
+#intro-head .sect-head span{ font-size: 48px; font-family: sans-serif; font-weight: bold; }
+
+#intro-body .intro-item p{ font-size: 14px; line-height: 200%; }
+
+/* index products slide */
+#pros-slide .pros-item{ width: 20%; text-align: center; }
+#pros-slide .pros-item img{ width: 100%; }
+#pros-slide .pros-item p{ font-size: 14px; margin-top: 3px; }
+
+/* single style */
+#single p, #single span{ font-size: 14px; line-height: 200%; }
+#single .single-text p,
+#single .single-text span{
+	white-space:normal;
+	word-break:break-all;
+	word-wrap:break-word;
+	overflow:hidden;
+
+	font-size: 14px;
+}
+#single .single-text pre{ margin-left: -30px;  }
+.single-head{ border-bottom: 3px solid #28a17e; }
+.single-excerpt{ width: 100%; background-color: rgba(200,200,200,0.7); padding: 10px; }
+.single-more{ margin-top: 20px 0; }
+.single-more p{ line-height: 200%; font-weight: 700; font-size: 14px; }
+
+
+/* mobile webpage style */
+@media (max-width: 960px){
+	.container{ width: 100%; }
+	#intro-body{ width: 100vw; }
+}
+
